@@ -38,4 +38,4 @@ It's designed to demonstrate:
 ---
 
 📌 Created by [Maria Andritsopoulou](mailto:maria.andri192@gmail.com)  
-📁 More on my GitHub: [github.com/maria-andri192](https://github.com/maria-andri192)
+📁 More on my GitHub: [github.com/MariaAdvanced](https://github.com/MariaAdvanced)
