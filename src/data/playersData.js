@@ -1,0 +1,35 @@
+const players = [
+    { id: 1, name: 'Anna', rank: 'Gold', wins: 32, level: 14 },
+    { id: 2, name: 'George', rank: 'Silver', wins: 22, level: 10 },
+    { id: 3, name: 'Nikos', rank: 'Bronze', wins: 15, level: 8 },
+    { id: 4, name: 'Maria', rank: 'Platinum', wins: 45, level: 20 },
+    { id: 5, name: 'Eleni', rank: 'Gold', wins: 37, level: 17 },
+    { id: 6, name: 'Dimitris', rank: 'Silver', wins: 19, level: 9 },
+    { id: 7, name: 'Kostas', rank: 'Gold', wins: 28, level: 12 },
+    { id: 8, name: 'Sofia', rank: 'Bronze', wins: 10, level: 6 },
+    { id: 9, name: 'Christos', rank: 'Platinum', wins: 41, level: 19 },
+    { id: 10, name: 'Vasilis', rank: 'Silver', wins: 26, level: 11 },
+    { id: 11, name: 'Ioanna', rank: 'Gold', wins: 33, level: 14 },
+    { id: 12, name: 'Petros', rank: 'Bronze', wins: 12, level: 7 },
+    { id: 13, name: 'Katerina', rank: 'Platinum', wins: 47, level: 21 },
+    { id: 14, name: 'Giannis', rank: 'Silver', wins: 24, level: 10 },
+    { id: 15, name: 'Eirini', rank: 'Gold', wins: 35, level: 15 },
+    { id: 16, name: 'Marios', rank: 'Silver', wins: 20, level: 9 },
+    { id: 17, name: 'Christina', rank: 'Bronze', wins: 8, level: 5 },
+    { id: 18, name: 'Alexandros', rank: 'Gold', wins: 39, level: 16 },
+    { id: 19, name: 'Niki', rank: 'Platinum', wins: 43, level: 20 },
+    { id: 20, name: 'Thanasis', rank: 'Silver', wins: 21, level: 10 },
+    { id: 21, name: 'Manos', rank: 'Gold', wins: 30, level: 13 },
+    { id: 22, name: 'Jenny', rank: 'Bronze', wins: 14, level: 6 },
+    { id: 23, name: 'Lena', rank: 'Platinum', wins: 44, level: 19 },
+    { id: 24, name: 'Pavlos', rank: 'Silver', wins: 25, level: 11 },
+    { id: 25, name: 'Dora', rank: 'Gold', wins: 36, level: 16 },
+    { id: 26, name: 'Stefanos', rank: 'Silver', wins: 18, level: 9 },
+    { id: 27, name: 'Marina', rank: 'Bronze', wins: 13, level: 6 },
+    { id: 28, name: 'Ilias', rank: 'Gold', wins: 31, level: 13 },
+    { id: 29, name: 'Zoi', rank: 'Platinum', wins: 46, level: 21 },
+    { id: 30, name: 'Fotis', rank: 'Silver', wins: 23, level: 10 }
+  ];
+  
+  export default players;
+  

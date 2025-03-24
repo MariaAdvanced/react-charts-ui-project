@@ -1,0 +1,31 @@
+const matchData = [
+    { id: 1, date: '2025-03-01', opponent: 'Team A', result: 'Win', points: 12 },
+    { id: 2, date: '2025-03-02', opponent: 'Team B', result: 'Loss', points: 7 },
+    { id: 3, date: '2025-03-03', opponent: 'Team C', result: 'Win', points: 15 },
+    { id: 4, date: '2025-03-04', opponent: 'Team D', result: 'Win', points: 13 },
+    { id: 5, date: '2025-03-05', opponent: 'Team E', result: 'Loss', points: 8 },
+    { id: 6, date: '2025-03-06', opponent: 'Team F', result: 'Win', points: 14 },
+    { id: 7, date: '2025-03-07', opponent: 'Team G', result: 'Loss', points: 9 },
+    { id: 8, date: '2025-03-08', opponent: 'Team H', result: 'Win', points: 10 },
+    { id: 9, date: '2025-03-09', opponent: 'Team I', result: 'Loss', points: 4 },
+    { id: 10, date: '2025-03-10', opponent: 'Team J', result: 'Win', points: 16 },
+    { id: 11, date: '2025-03-11', opponent: 'Team K', result: 'Loss', points: 6 },
+    { id: 12, date: '2025-03-12', opponent: 'Team L', result: 'Win', points: 18 },
+    { id: 13, date: '2025-03-13', opponent: 'Team M', result: 'Loss', points: 7 },
+    { id: 14, date: '2025-03-14', opponent: 'Team N', result: 'Win', points: 20 },
+    { id: 15, date: '2025-03-15', opponent: 'Team O', result: 'Loss', points: 9 },
+    { id: 16, date: '2025-03-16', opponent: 'Team P', result: 'Win', points: 14 },
+    { id: 17, date: '2025-03-17', opponent: 'Team Q', result: 'Loss', points: 8 },
+    { id: 18, date: '2025-03-18', opponent: 'Team R', result: 'Win', points: 15 },
+    { id: 19, date: '2025-03-19', opponent: 'Team S', result: 'Loss', points: 10 },
+    { id: 20, date: '2025-03-20', opponent: 'Team T', result: 'Win', points: 12 },
+    { id: 21, date: '2025-03-21', opponent: 'Team U', result: 'Win', points: 13 },
+    { id: 22, date: '2025-03-22', opponent: 'Team V', result: 'Loss', points: 6 },
+    { id: 23, date: '2025-03-23', opponent: 'Team W', result: 'Win', points: 14 },
+    { id: 24, date: '2025-03-24', opponent: 'Team X', result: 'Loss', points: 5 },
+    { id: 25, date: '2025-03-25', opponent: 'Team Y', result: 'Win', points: 17 },
+    { id: 26, date: '2025-03-26', opponent: 'Team Z', result: 'Loss', points: 8 },
+  ];
+  
+  export default matchData;
+  
