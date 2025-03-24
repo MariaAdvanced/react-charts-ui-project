@@ -45,9 +45,6 @@ const StackedBarChart = ({ dateRange }) => {
 
   const filteredData = fullData.filter(d => d.date >= start && d.date <= end);
 
-  // DEBUG
-  console.log('📅 Start:', start, '| End:', end);
-  console.log('🎯 FilteredData:', filteredData);
 
   return (
     <ResponsiveContainer width="100%" height={300}>

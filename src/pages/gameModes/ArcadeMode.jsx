@@ -1,64 +1,43 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ChartBarIcon} from '@heroicons/react/24/outline';
-import { BoltIcon } from '@heroicons/react/24/outline';
+import { useNavigate } from 'react-router-dom';
 
 const ArcadeMode = () => {
+  const navigate = useNavigate();
+
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.95 }}
       animate={{ opacity: 1, scale: 1 }}
       exit={{ opacity: 0, scale: 0.95 }}
-      transition={{ duration: 0.6 }}
-      className="p-8 text-gray-900 dark:text-white"
+      transition={{ duration: 0.6, ease: 'easeOut' }}
+      className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-purple-800 via-indigo-700 to-blue-800 text-white px-6"
     >
-      
-      <div className="bg-gradient-to-r from-indigo-600 to-purple-600 p-6 rounded-lg shadow-lg text-center">
-        <div className="flex flex-col items-center">
-          <BoltIcon className="h-12 w-12 text-yellow-300 mb-2 animate-pulse" />
-          <h1 className="text-4xl font-extrabold mb-2">Arcade Mode</h1>
-          <p className="text-lg text-white/90 max-w-xl">
-            Test your reflexes in a fast-paced, high-stakes environment. Only the quickest survive!
+      <div className="text-center max-w-2xl">
+        <h1 className="text-5xl font-extrabold mb-4 tracking-tight animate-pulse">
+          🚀 Arcade Mode Activated
+        </h1>
+        <p className="text-xl text-gray-200 mb-8">
+          Speed. Precision. Glory. In this mode, every move counts.
+        </p>
+
+        <div className="bg-black bg-opacity-30 rounded-xl p-6 border border-indigo-400 shadow-xl">
+          <p className="text-lg text-indigo-200 mb-2">
+            🎯 Objectives:
           </p>
-          <button className="mt-4 px-5 py-2 bg-yellow-400 text-gray-900 font-semibold rounded shadow hover:scale-105 transition">
-            Start Now
-          </button>
+          <ul className="list-disc list-inside text-gray-100 text-left text-sm">
+            <li>Complete rounds under pressure</li>
+            <li>Earn XP and unlock achievements</li>
+            <li>Climb the leaderboard</li>
+          </ul>
         </div>
-      </div>
 
-      
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
-        {["Sessions", "Avg Score", "Completion Rate"].map((label, idx) => (
-          <motion.div
-            key={label}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3 + idx * 0.2 }}
-            className="bg-white dark:bg-gray-800 p-4 rounded shadow flex items-center gap-4"
-          >
-            <ChartBarIcon className="h-8 w-8 text-indigo-500" />
-            <div>
-              <div className="text-sm text-gray-500 dark:text-gray-400">{label}</div>
-              <div className="text-xl font-bold">{[320, "12,400", "78%"][idx]}</div>
-            </div>
-          </motion.div>
-        ))}
-      </div>
-
-      
-      <div className="mt-12">
-        <motion.div
-          initial={{ opacity: 0, x: 50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ delay: 1 }}
-          className="bg-white dark:bg-gray-800 rounded p-6 shadow"
+        <button
+          onClick={() => navigate('/modes')}
+          className="mt-10 px-6 py-3 bg-white text-indigo-700 font-semibold rounded-lg shadow hover:bg-gray-100 transition"
         >
-          <h2 className="text-2xl font-semibold mb-4">Score Distribution</h2>
-          <div className="h-64 flex items-center justify-center text-gray-400">
-            
-            [Chart Placeholder]
-          </div>
-        </motion.div>
+          ← Back to Game Modes
+        </button>
       </div>
     </motion.div>
   );

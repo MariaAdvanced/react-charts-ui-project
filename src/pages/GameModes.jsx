@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 import { BoltIcon, UsersIcon, ChartBarIcon, TrophyIcon } from '@heroicons/react/24/outline';
 
 const gameModes = [
-  { name: 'Arcade Mode', description: 'Experience the fastest and most fun gameplay!', icon: BoltIcon, link: '/arcade' },
-  { name: 'Statistics Mode', description: 'View detailed stats and game performance.', icon: ChartBarIcon, link: '/stats' },
-  { name: 'Multiplayer Mode', description: 'Play with others online in exciting team modes.', icon: UsersIcon, link: '/multiplayer' },
-  { name: 'Training Mode', description: 'Train and practice to improve your skills.', icon: TrophyIcon, link: '/training' },
+  { name: 'Arcade Mode', description: 'Experience the fastest and most fun gameplay!', icon: BoltIcon, link: '/modes/arcade' },
+  { name: 'Statistics Mode', description: 'View detailed stats and game performance.', icon: ChartBarIcon, link: '/modes/statistics' },
+  { name: 'Multiplayer Mode', description: 'Play with others online in exciting team modes.', icon: UsersIcon, link: '/modes/multiplayer' },
+  { name: 'Training Mode', description: 'Train and practice to improve your skills.', icon: TrophyIcon, link: '/modes/training' },
 ];
 
 const GameModes = () => {
@@ -18,7 +18,7 @@ const GameModes = () => {
           <Link
             key={mode.name}
             to={mode.link}
-            className="bg-white p-6 rounded-lg shadow-lg hover:bg-indigo-600 hover:text-white transition duration-300 ease-in-out"
+            className="bg-white p-6 rounded-lg shadow-lg hover:bg-indigo-600 hover:text-white hover:scale-105 transition-transform duration-300 ease-in-out"
           >
             <div className="flex items-center justify-center mb-4">
               <mode.icon className="w-12 h-12 text-indigo-500" />

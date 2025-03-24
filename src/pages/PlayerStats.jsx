@@ -2,7 +2,7 @@ import React, { useState, useMemo } from 'react';
 import players from '../data/playersData';
 import FilterBar from '../components/FilterBar';
 import PlayerTable from '../components/PlayerTable';
-import DarkModeToggle from '../components/DarkModeToggle';
+
 const ITEMS_PER_PAGE = 10;
 
 const PlayerStats = () => {
@@ -12,23 +12,23 @@ const PlayerStats = () => {
   const [sortDirection, setSortDirection] = useState('asc');
   const [currentPage, setCurrentPage] = useState(1);
 
-  // Filtered & sorted data
+  
   const filteredData = useMemo(() => {
     let filtered = players;
 
-    // Search
+    
     if (searchTerm) {
       filtered = filtered.filter((player) =>
         player.name.toLowerCase().includes(searchTerm.toLowerCase())
       );
     }
 
-    // Rank filter
+    
     if (selectedRank) {
       filtered = filtered.filter((player) => player.rank === selectedRank);
     }
 
-    // Sort
+    
     filtered.sort((a, b) => {
       if (a[sortBy] < b[sortBy]) return sortDirection === 'asc' ? -1 : 1;
       if (a[sortBy] > b[sortBy]) return sortDirection === 'asc' ? 1 : -1;
@@ -74,7 +74,7 @@ const PlayerStats = () => {
         sortDirection={sortDirection}
       />
 
-      {/* Pagination */}
+      
       <div className="flex justify-center mt-4 gap-2">
         <button
           onClick={() => setCurrentPage((p) => Math.max(p - 1, 1))}

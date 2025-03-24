@@ -3,7 +3,7 @@ import {
   PieChart, Pie, Cell, Tooltip, Legend, ResponsiveContainer
 } from 'recharts';
 
-const modes = ['Casual', 'Ranked', 'Hardcore', 'Custom'];
+const modes = ['Arcade', 'Multiplayer', 'Statistics', 'Training'];
 
 const fullData = Array.from({ length: 31 }, (_, i) => {
   const date = `2024-03-${(i + 1).toString().padStart(2, '0')}`;

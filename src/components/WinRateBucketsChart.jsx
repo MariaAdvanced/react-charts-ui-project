@@ -10,7 +10,6 @@ import {
   Legend
 } from 'recharts';
 
-// Ψεύτικα δεδομένα για 31 μέρες
 const fullData = Array.from({ length: 31 }, (_, i) => {
   const matches = Math.floor(Math.random() * 40) + 10;
   const wins = Math.floor(matches * (0.3 + Math.random() * 0.5));
@@ -18,7 +17,6 @@ const fullData = Array.from({ length: 31 }, (_, i) => {
   return { winRate };
 });
 
-// Helper: Φτιάχνει buckets
 const groupByWinRate = (data) => {
   const buckets = {
     '0–25%': 0,
