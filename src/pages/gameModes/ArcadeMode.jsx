@@ -1,43 +1,59 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import { ArrowLeftIcon } from '@heroicons/react/24/outline';
 
 const ArcadeMode = () => {
-  const navigate = useNavigate();
-
   return (
     <motion.div
-      initial={{ opacity: 0, scale: 0.95 }}
-      animate={{ opacity: 1, scale: 1 }}
-      exit={{ opacity: 0, scale: 0.95 }}
-      transition={{ duration: 0.6, ease: 'easeOut' }}
-      className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-purple-800 via-indigo-700 to-blue-800 text-white px-6"
+      className="min-h-screen bg-gradient-to-b from-gray-900 via-black to-gray-800 text-white p-6"
+      initial={{ opacity: 0, y: 40 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -40 }}
+      transition={{ duration: 0.5 }}
     >
-      <div className="text-center max-w-2xl">
-        <h1 className="text-5xl font-extrabold mb-4 tracking-tight animate-pulse">
-          🚀 Arcade Mode Activated
-        </h1>
-        <p className="text-xl text-gray-200 mb-8">
-          Speed. Precision. Glory. In this mode, every move counts.
-        </p>
-
-        <div className="bg-black bg-opacity-30 rounded-xl p-6 border border-indigo-400 shadow-xl">
-          <p className="text-lg text-indigo-200 mb-2">
-            🎯 Objectives:
-          </p>
-          <ul className="list-disc list-inside text-gray-100 text-left text-sm">
-            <li>Complete rounds under pressure</li>
-            <li>Earn XP and unlock achievements</li>
-            <li>Climb the leaderboard</li>
-          </ul>
-        </div>
-
-        <button
-          onClick={() => navigate('/modes')}
-          className="mt-10 px-6 py-3 bg-white text-indigo-700 font-semibold rounded-lg shadow hover:bg-gray-100 transition"
+     
+      <div className="mb-6">
+        <Link
+          to="/modes"
+          className="inline-flex items-center text-indigo-400 hover:text-indigo-300 transition"
         >
-          ← Back to Game Modes
-        </button>
+          <ArrowLeftIcon className="w-5 h-5 mr-2" />
+          Back to Game Modes
+        </Link>
+      </div>
+
+      <div className="text-center mb-12">
+        <h1 className="text-5xl font-extrabold text-indigo-400 drop-shadow-md">🔥 Arcade Mode</h1>
+        <p className="text-lg text-gray-300 mt-4 max-w-2xl mx-auto">
+          Speed. Reflex. Chaos. Enter the realm of nonstop action where every second counts and every move defines victory.
+        </p>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        {[
+          {
+            title: '⚡ Fast-Paced Matches',
+            desc: 'Jump into quick battles with explosive outcomes.'
+          },
+          {
+            title: '🎮 Dynamic Rules',
+            desc: 'Expect the unexpected with modifiers and custom conditions.'
+          },
+          {
+            title: '🏆 No Pressure, All Fun',
+            desc: 'Great for casual players and warm-up sessions.'
+          }
+        ].map((feature, i) => (
+          <div key={i} className="bg-gray-900 p-6 rounded-lg shadow-md hover:shadow-xl transition">
+            <h3 className="text-xl font-bold text-indigo-300 mb-2">{feature.title}</h3>
+            <p className="text-gray-400">{feature.desc}</p>
+          </div>
+        ))}
+      </div>
+
+      <div className="mt-16 text-center text-gray-500 italic text-sm">
+        “Only the fastest survive.”
       </div>
     </motion.div>
   );

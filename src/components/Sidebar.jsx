@@ -13,7 +13,6 @@ const navItems = [
   { path: '/players', label: 'Player Stats', icon: UserIcon },
   { path: '/history', label: 'Match History', icon: CalendarDaysIcon },
   { path: '/modes', label: 'Game Modes', icon: TrophyIcon },
-  { path: '/reports', label: 'Reports', icon: TrophyIcon },
   { path: '/live', label: 'Live Stats', icon: SignalIcon }
 ];
 

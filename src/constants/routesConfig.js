@@ -2,7 +2,6 @@ import Dashboard from '../pages/Dashboard';
 import PlayerStats from '../pages/PlayerStats';
 import MatchHistory from '../pages/MatchHistory';
 import GameModes from '../pages/GameModes';
-import Reports from '../pages/Reports';
 import LiveStats from '../pages/LiveStats';
 
 
@@ -30,7 +29,6 @@ export const routesConfig = [
   { path: 'players', element: <PlayerStats /> },
   { path: 'history', element: <MatchHistory /> },
   { path: 'modes', element: <GameModes /> },
-  { path: 'reports', element: <Reports /> },
   { path: 'live', element: <LiveStats /> },
 
   

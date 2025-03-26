@@ -3,7 +3,6 @@ export const ROUTES = {
     PLAYERS: '/players',
     HISTORY: '/history',
     MODES: '/modes',
-    REPORTS: '/reports',
     LIVE: '/live',
     MODES_ARCADE: '/modes/arcade',
     MODES_STATISTICS: '/modes/statistics',

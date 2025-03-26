@@ -2,6 +2,7 @@ import React, { useState, useEffect, useMemo } from 'react';
 import matchData from '../data/matchData'; 
 import DatePicker from 'react-datepicker'; 
 import "react-datepicker/dist/react-datepicker.css"; 
+import ExcelButton from '../components/ExcelButton';
 
 const ITEMS_PER_PAGE = 10; 
 
@@ -59,8 +60,11 @@ const MatchHistory = () => {
 
   return (
     <div className="p-4 dark:bg-gray-900 min-h-screen">
-      <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-4">Match History</h2>
+      <div className="flex justify-between items-center mb-4">
+  <h2 className="text-2xl font-bold text-gray-800 dark:text-white">Match History</h2>
+  <ExcelButton getData={() => filteredData} filename="MatchHistory.xlsx" />
 
+</div>
       
       <div className="flex gap-4 mb-4 ">
         <div className="flex gap-2 items-center">

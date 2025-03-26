@@ -1,41 +1,75 @@
 # 🎮 React Game Dashboard
 
-This is a personal project built with **React**, **Recharts**, and **Tailwind CSS**.
+This is a personal project built with **React**, **Tailwind CSS**, and **Recharts**, designed as a game dashboard UI to visualize and interact with gameplay statistics.
 
-It displays game-related analytics such as:
-- Player stats (search, filter, sort, pagination)
-- Match history
-- Game mode performance
-- Reports and data visualizations (bar, pie, scatter, composed charts)
-- Fully responsive layout
-- Dark mode toggle
+## 📊 Features
 
-## 🔧 Technologies Used
+- 🎯 Player Stats Table (search, filter, sort, pagination)
+- 📆 Match History with date filters
+- 📈 Dashboard with 5 charts:
+  - Daily Wins vs Losses
+  - Game Mode Popularity (Pie)
+  - Skill Progression (Scatter + Trend Line)
+  - Win Rate Buckets
+  - XP, Matches & Win Rate Over Time (Composed Chart)
+- 📂 Excel Export (table data, filtered or full)
+- 🌙 Dark Mode Toggle
+- 📡 Live Game Stats with online count + activity feed
+- 🕹️ Game Modes Pages (Arcade, Multiplayer, Training, Statistics)
+- 🏅 Dynamic badges for top players
 
-- React (Hooks, Router)
-- Tailwind CSS
-- Recharts (Charts & Graphs)
-- Framer Motion (Page transitions)
-- Fake data generation (for realistic UI)
+## 🖼️ Screenshots
+> All images are stored in `/public/assets/`
 
-## 📅 Features
+### Dashboard  
+![Dashboard](assets/Dashboard.PNG)
 
-- Dynamic date range filtering
-- Sidebar navigation
-- Data-driven UI
-- Creative mode pages (Arcade, Multiplayer, etc.)
-- Built to improve React/JSX & UI design skills
+### Player Stats  
+![Player Stats](assets/PlayerStats.PNG)
+
+### Match History  
+![Match History](assets/MatchHistory.PNG)
+
+### Game Modes  
+![Game Modes](assets/GameModes.PNG)
+
+### Arcade Mode  
+![Arcade Mode](assets/ArcadeMode.PNG)
+
+### Live Stats  
+![Live Stats](assets/LiveStats.png)
+
+## 🛠️ Getting Started
+
+To run this project locally:
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/MariaAdvanced/react-charts-ui-project.git
+cd react-charts-ui-project
+
+# 2. Install dependencies
+npm install
+
+# 3. Start the development server
+npm start
+
+# Make sure you're using Node v22.13.0
+If you’re using nvm: nvm use 22.13.0
+
+Open [http://localhost:3000](http://localhost:3000) in your browser 
 
 ## 💡 Purpose
 
-This project is part of my learning journey into professional React development.  
-It's designed to demonstrate:
-- Component architecture
-- State management
-- UI/UX practices
-- Data visualization in modern dashboards
+This project was built to level up my React skills and learn how to build a professional-grade UI for data-rich applications.
 
----
+It focuses on:
+- 🧱 Reusable components & clean structure
+- 🎨 UI/UX consistency
+- 📊 Handling complex data visualizations
+- ⚡ Creating interactive user experiences
 
-📌 Created by [Maria Andritsopoulou](mailto:maria.andri192@gmail.com)  
-📁 More on my GitHub: [github.com/MariaAdvanced](https://github.com/MariaAdvanced)
+## ✨ Author
+
+Made with 💻 by Maria Andritsopoulou (mailto:maria.andri192@gmail.com)  
+🔗 GitHub: [github.com/MariaAdvanced](https://github.com/MariaAdvanced)
