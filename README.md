@@ -19,7 +19,6 @@ This is a personal project built with **React**, **Tailwind CSS**, and **Rechart
 - 🏅 Dynamic badges for top players
 
 ## 🖼️ Screenshots
-> All images are stored in `/public/assets/`
 
 ### Dashboard  
 ![Dashboard](assets/Dashboard.PNG)
